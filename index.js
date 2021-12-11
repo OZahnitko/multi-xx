@@ -55,3 +55,4 @@ readDirs();
 // TODO: Make this typescript.
 // TODO: Give this one a good README.
 // TODO: Give this repo some kind of coherent folder structure.
+// TODO: Recursively scan all of the directories.

@@ -54,3 +54,4 @@ readDirs();
 // TODO: Regex search for all files that contain README in the name.
 // TODO: Make this typescript.
 // TODO: Give this one a good README.
+// TODO: Give this repo some kind of coherent folder structure.

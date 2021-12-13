@@ -6,9 +6,17 @@
   "author": "sashaz <6964653+OZahnitko@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "scan": "node index.js"
+    "build": "tsc --outDir ./dist",
+    "dev": "dotenv -e .env.local nodemon",
+    "scan": "node index.js",
+    "prescan:ts": "yarn build",
+    "scan:ts": "dotenv -e .env  node ./dist/index.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "@types/node": "^16.11.12",
+    "dotenv-cli": "^4.1.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
   }
 }

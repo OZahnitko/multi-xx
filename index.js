@@ -1,4 +1,4 @@
-const { lstat, readdir, readFile, writeFile } = require("fs");
+const { readdir, readFile, writeFile } = require("fs");
 const { resolve } = require("path");
 const { promisify } = require("util");
 
@@ -54,4 +54,6 @@ readDirs();
 // TODO: Make this typescript.
 // TODO: Give this one a good README.
 // TODO: Give this repo some kind of coherent folder structure.
-// TODO: Recursively scan all of the directories.
+// TODO: Recursively scan all of the directories for all possible READMEs.
+// TODO: Rewrite in TS.
+// TODO: Make sure to ignore node_modules directories, otherwise there will be a lot of things to scan through.

@@ -12,3 +12,5 @@ sudo service cron start
 ```
 
 Maybe it cannot push?
+
+Might need to be doing a manual push.

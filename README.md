@@ -10,3 +10,5 @@ Need to make sure cron is actually running.
 ```bash
 sudo service cron start
 ```
+
+Maybe it cannot push?

@@ -1,3 +1,5 @@
+// TODO: Give this one a good README.
+
 import { existsSync, lstatSync, mkdirSync, readdirSync, unlinkSync } from "fs";
 
 import { resolve } from "path";
@@ -26,7 +28,7 @@ const readmeFiles = FILES.filter((file) => file.match(/.*README.*\.md/g));
 
 const writeFiles = async (files: string[]) => {
   const filesData = await Promise.all(
-    readmeFiles.map(async (file) => ({
+    files.map(async (file) => ({
       content: (await readFilePromise(file)).toString(),
       filePath: file,
       name: file.split("/").slice(4).join("."),
@@ -39,7 +41,6 @@ const writeFiles = async (files: string[]) => {
 
   // Remove all old files from the "docs" directory.
   readdirSync(resolve(__dirname, "../docs")).forEach((file) => {
-    console.log(resolve(__dirname, "../docs", file));
     unlinkSync(resolve(__dirname, "../docs", file));
   });
 

@@ -8,9 +8,8 @@
   "scripts": {
     "build": "tsc --outDir ./dist",
     "dev": "dotenv -e .env.local nodemon",
-    "scan": "node index.js",
-    "prescan:ts": "yarn build",
-    "scan:ts": "dotenv -e .env  node ./dist/index.js"
+    "prescan": "yarn build",
+    "scan": "dotenv -e .env  node ./dist/index.js"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",

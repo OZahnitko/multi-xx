@@ -1,4 +1,5 @@
 #!/bin/bash
-git add /home/sasha/multi/multi-xx
-git commit -m "Nightly Commit - $(date) - test"
+cd /home/sasha/multi/multi-xx
+git add .
+git commit -m "Nightly Commit - $(date) - new test"
 git push

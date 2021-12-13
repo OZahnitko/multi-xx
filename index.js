@@ -37,7 +37,6 @@ const readDirs = async () => {
       return { repoName: readme.repoName, readme: inner };
     })
   );
-  console.log(final);
 
   final.forEach(async (file) => {
     file.readme.forEach(async (con) => {

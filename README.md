@@ -14,3 +14,5 @@ sudo service cron start
 Maybe it cannot push?
 
 Might need to be doing a manual push.
+
+- - - - - /home/sasha/multi/multi-xx/make_commit.sh
